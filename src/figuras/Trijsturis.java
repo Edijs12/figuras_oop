@@ -22,6 +22,7 @@ public class Trijsturis {
 		b = distance(punktiX[1], punktiY[1], punktiX[2], punktiY[2]);
 		c = distance(punktiX[2], punktiY[2], punktiX[0], punktiY[0]);
 		
+<<<<<<< HEAD
 		if(a < b+c && b < a+c && c < a+b) {
 			double p = (a+b+c) /2;
 			return Math.sqrt(p*(p-a)*(p-b)*(p-c));
@@ -33,11 +34,28 @@ public class Trijsturis {
 					 "\ntrijsturis izveidot nevar!",
 					 "Brīdinājums",
 					 JOptionPane.ERROR_MESSAGE);
+=======
+		if(a < b + c && b < a + c && c < a + b) {
+			double p = (a + b + c) / 2;
+			return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+			
+		} else {
+			JOptionPane.showMessageDialog(null,
+					"No nogriežniem: a = " + a + 
+					"\nb = " + b + 
+					"\nc = " + c + 
+					"\n trijstūri izveidot nevar!", "Brīdinājums",
+					JOptionPane.ERROR_MESSAGE);
+>>>>>>> a1a8d39df46f7d829885d528bcdf1568897214f7
 			return 0;
 		}
 	}
 	
 	double distance(int x1, int y1, int x2, int y2) {
+<<<<<<< HEAD
 		return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1,  2));
+=======
+		return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+>>>>>>> a1a8d39df46f7d829885d528bcdf1568897214f7
 	}
 }
