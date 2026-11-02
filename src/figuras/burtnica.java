@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Burtnica {
 
 	public static void main(String[] args) {
-		Centrs centraP1 = new Centrs(0, 101);
+	/*	Centrs centraP1 = new Centrs(0, 101);
 		JOptionPane.showMessageDialog(null, "Pirmā punkta koordinātas: "
 		+ centraP1.izvaditKoordinatas(), "Infomrācija",
 		JOptionPane.PLAIN_MESSAGE);
@@ -31,6 +31,29 @@ public class Burtnica {
 		Cetrsturis c4 = new Cetrsturis(centraP1, 5, 10);
 		JOptionPane.showMessageDialog(null, "Četrstūra augstums: "
 		+ c4.augstums + "\nplatums: " + c4.platums + "\ncentra punkts: " + c4.punkts.izvaditKoordinatas());
+		*/
+		void Cetrsturis() {
+		String[] izveles = {"1. Četrstūris "
+				
+		};
+		
+				do {
+		            izvelne = (String) JOptionPane.showInputDialog(
+		                    null,
+		                    "Izvēlies darbību",
+		                    "Darbību izvēle",
+		                    JOptionPane.QUESTION_MESSAGE,
+		                    null,
+		                    darbibuSaraksts,
+		                    darbibuSaraksts[0]
+		            );
+
+		            if (izvelne == null) {
+		                izvelne = "Aizvērt";
+		            }
+
+		            switch (izvelne) {
+
 		
 	}
 
